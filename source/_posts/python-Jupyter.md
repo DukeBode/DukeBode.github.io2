@@ -9,8 +9,18 @@ tags:
 
 <!-- more -->
 
+```sh
+# 安装
+pip install jupyterlab
+
+```
+
+## 参考文档
+1. [Installing the Jupyter Software](https://jupyter.org/install)
+1. [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+
+
 ## 配置内核
-[Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 
 ## 设置默认起始目录
 

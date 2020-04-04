@@ -9,44 +9,21 @@ tags:
 
 ## Python 3 安装
 
-[官网](https://www.python.org/) | [文档](https://docs.python.org) | [包管理工具 pip](https://pip.pypa.io/)
-
 <!-- more -->
 
-### 源码安装（推荐）
+## pypi 源配置
 
-```sh
-# 下载安装包
-wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz
-# 解压
-tar -xzvf Python-3.7.1.tgz
-# 切换目录
-cd Python-3.7.1
-# 生成 makefile 文件
-./configure --prefix=/usr/local/Python --enable-optimizations
-# 编译安装
-make
-make install
-hash -r
-ln -s /usr/local/Python/bin/python3.7 /usr/bin/python3
-ln -s /usr/local/Python/bin/pip /usr/bin/pip3
-```
+### 常见在线 pypi repository
+- 华为云 https://mirrors.huaweicloud.com/repository/pypi/simple
+- 清华 https://pypi.tuna.tsinghua.edu.cn/simple
 
-### CentOS 软件包方式安装
+### 配置 pypi 镜像源
 
-```sh
-# 安装 python3
-yum install python36
-# 安装 pip3
-python36 get-pip.py
-```
-
-## 中国地区 pypi 配置
 ```sh
 # 更新 pip 至最新版
-pip install -i https://mirrors.huaweicloud.com/repository/pypi/simple pip -U
-# 配置华为云镜像源
-pip config set global.index-url https://mirrors.huaweicloud.com/repository/pypi/simple
+pip install -i <pypi repository> pip -U
+# 配置 pypi 镜像源
+pip config set global.index-url <pypi repository>
 ```
 
 ## Pip 包管理
@@ -54,10 +31,26 @@ pip config set global.index-url https://mirrors.huaweicloud.com/repository/pypi/
 [官网](https://pip.pypa.io)
 
 ```sh
-pip install --upgrade pip
+
+# 导出依赖包名至 requirements.txt
+pip freeze > requirements.txt
+# 安装 requirements.txt 中列出的包
+pip install -r requirements.txt
+# 卸载包
+pip uninstall [options] <package>
+# 卸载 requirements.txt 中列出的包
+pip uninstall [options] -r <requirements file>
+# Options:
+# -r, --requirement <file>
+# -y, --yes  不询问，直接卸载
 ```
 
 ## conda 包管理
 
-[官网](https://docs.conda.io/en/latest/)
+- [conda 官网](https://docs.conda.io/en/latest/)
 https://docs.conda.io/en/latest/miniconda.html
+
+## 
+- [官网](https://www.python.org/) 
+- [文档](https://docs.python.org) 
+- [包管理工具 pip](https://pip.pypa.io/)

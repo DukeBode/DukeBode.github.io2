@@ -7,6 +7,10 @@ tags:
 
 <!-- more -->
 
+[Java SE Downloads](https://www.oracle.com/java/technologies/javase-downloads.html)
+[Java Documentation](https://docs.oracle.com/en/java/)
+[Jakarta® EE Software](https://jakarta.ee/)
+
 yum install java-latest-openjdk
 
 java 中文显示不正常
