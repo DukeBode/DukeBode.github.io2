@@ -6,6 +6,9 @@ tags:
 ---
 
 <!-- more -->
+- [Database Software Downloads | Oracle](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html)
+
+- [Oracle Database Documentation - Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/index.html)
 
 - Oracle Enterprise Manager Database Express
 

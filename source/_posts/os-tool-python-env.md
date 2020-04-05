@@ -54,3 +54,11 @@ https://docs.conda.io/en/latest/miniconda.html
 - [官网](https://www.python.org/) 
 - [文档](https://docs.python.org) 
 - [包管理工具 pip](https://pip.pypa.io/)
+
+## 切片
+
+```python
+List[start:end:step]
+# 反转列表
+List[::-1]
+```
