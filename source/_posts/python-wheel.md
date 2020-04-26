@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-09 21:44:03
+ * @LastEditTime: 2020-04-26 14:28:12
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \DukeBode.github.io\source\_posts\python-wheel.md
+ -->
 ---
 title: python wheel 打包
 date: 2019-11-09 21:44:03
@@ -13,15 +21,36 @@ tags:
 
 <!-- more -->
 
+### github action
+
+1. 创建 GitHub 仓库
+1. 配置 pypi token
+1. 配置 action 脚本
+1. 配置本地 git 环境
+1. 配置 本地仓库
+1. 配置打包及开发环境
+
+### 最小pypi包
+
+```sh
+.gitignore
+LICENSE
+README.md
+setup.py
+docs/
+    /README.md
+module/
+    /__init__.py # python 包标志
+    /__main__.py
+```
+
 ### 打包环境
 
 ```sh
 # bdist
-pip install --upgrade setuptools
 # bdist_wheel
-pip install wheel
+pip install setuptools wheel twine
 # twine upload dist/*
-pip install twine
 ```
 
 ### __init__.py
