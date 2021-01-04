@@ -11,7 +11,7 @@ data:
     desc: 分享Web前后端开发经验和各类IT技术，热衷于PHP和Linux操作系统的学习
     tags: 标签
   行走的代码:
-    url: https://www.tespera.com/
+    url: https://github.com/tespera
     img: 图片地址
     about: 张进平
     desc: 分享Web前后端开发经验和各类IT技术，热衷于PHP和Linux操作系统的学习
